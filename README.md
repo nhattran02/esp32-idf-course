@@ -1,2 +1,2 @@
-# esp32-idf-course
-Course on the ESP32 IDF 
+# ESP32 IDF COURSE
+This repository where we cover the essentials of the ESP using the IDF.
