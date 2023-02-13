@@ -34,6 +34,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/minhnhat/esp/workspace/esp32-tutorial/01_blinky/build/esp-idf/esp_system/port/soc/esp32/cmake_install.cmake")
+  include("/home/minhnhat/esp/workspace/esp32-tutorial/1_blinky/build/esp-idf/esp_system/port/soc/esp32/cmake_install.cmake")
 endif()
 

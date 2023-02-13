@@ -1,4 +1,4 @@
-/* * Data converted from /home/minhnhat/esp/workspace/esp32-tutorial/01_blinky/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/minhnhat/esp/workspace/esp32-tutorial/1_blinky/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

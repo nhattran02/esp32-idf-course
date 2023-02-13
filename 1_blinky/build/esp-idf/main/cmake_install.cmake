@@ -1,4 +1,4 @@
-# Install script for directory: /home/minhnhat/esp/workspace/esp32-tutorial/01_blinky/main
+# Install script for directory: /home/minhnhat/esp/workspace/esp32-tutorial/1_blinky/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
