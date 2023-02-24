@@ -1,0 +1,760 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/minhnhat/esp/workspace/esp32-tutorial/15_FreeRTOS/build/bootloader/esp-idf/esptool_py && /home/minhnhat/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/minhnhat/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/minhnhat/esp/workspace/esp32-tutorial/15_FreeRTOS/build/bootloader/bootloader.bin
+Bootloader binary size 0x6730 bytes. 0x8d0 bytes (8%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+/home/minhnhat/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-3341-gbb25d6abd3-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I/home/minhnhat/esp/esp-idf/components/newlib/platform_include -I/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/minhnhat/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/minhnhat/esp/esp-idf/components/freertos/esp_additions/include -I/home/minhnhat/esp/esp-idf/components/esp_hw_support/include -I/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/soc -I/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/minhnhat/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/home/minhnhat/esp/esp-idf/components/esp_hw_support/port/esp32/private_include -I/home/minhnhat/esp/esp-idf/components/heap/include -I/home/minhnhat/esp/esp-idf/components/log/include -I/home/minhnhat/esp/esp-idf/components/soc/include -I/home/minhnhat/esp/esp-idf/components/soc/esp32 -I/home/minhnhat/esp/esp-idf/components/soc/esp32/include -I/home/minhnhat/esp/esp-idf/components/hal/esp32/include -I/home/minhnhat/esp/esp-idf/components/hal/include -I/home/minhnhat/esp/esp-idf/components/hal/platform_port/include -I/home/minhnhat/esp/esp-idf/components/esp_rom/include -I/home/minhnhat/esp/esp-idf/components/esp_rom/include/esp32 -I/home/minhnhat/esp/esp-idf/components/esp_rom/esp32 -I/home/minhnhat/esp/esp-idf/components/esp_common/include -I/home/minhnhat/esp/esp-idf/components/esp_system/include -I/home/minhnhat/esp/esp-idf/components/esp_system/port/soc -I/home/minhnhat/esp/esp-idf/components/esp_system/port/include/private -I/home/minhnhat/esp/esp-idf/components/xtensa/include -I/home/minhnhat/esp/esp-idf/components/xtensa/esp32/include -I/home/minhnhat/esp/esp-idf/components/lwip/include -I/home/minhnhat/esp/esp-idf/components/lwip/include/apps -I/home/minhnhat/esp/esp-idf/components/lwip/include/apps/sntp -I/home/minhnhat/esp/esp-idf/components/lwip/lwip/src/include -I/home/minhnhat/esp/esp-idf/components/lwip/port/include -I/home/minhnhat/esp/esp-idf/components/lwip/port/freertos/include -I/home/minhnhat/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/minhnhat/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/minhnhat/esp/esp-idf/components/esp_ringbuf/include -I/home/minhnhat/esp/esp-idf/components/efuse/include -I/home/minhnhat/esp/esp-idf/components/efuse/esp32/include -I/home/minhnhat/esp/esp-idf/components/driver/include -I/home/minhnhat/esp/esp-idf/components/driver/deprecated -I/home/minhnhat/esp/esp-idf/components/driver/dac/include -I/home/minhnhat/esp/esp-idf/components/driver/gpio/include -I/home/minhnhat/esp/esp-idf/components/driver/gptimer/include -I/home/minhnhat/esp/esp-idf/components/driver/i2c/include -I/home/minhnhat/esp/esp-idf/components/driver/i2s/include -I/home/minhnhat/esp/esp-idf/components/driver/ledc/include -I/home/minhnhat/esp/esp-idf/components/driver/mcpwm/include -I/home/minhnhat/esp/esp-idf/components/driver/pcnt/include -I/home/minhnhat/esp/esp-idf/components/driver/rmt/include -I/home/minhnhat/esp/esp-idf/components/driver/sdio_slave/include -I/home/minhnhat/esp/esp-idf/components/driver/sdmmc/include -I/home/minhnhat/esp/esp-idf/components/driver/sigma_delta/include -I/home/minhnhat/esp/esp-idf/components/driver/spi/include -I/home/minhnhat/esp/esp-idf/components/driver/temperature_sensor/include -I/home/minhnhat/esp/esp-idf/components/driver/touch_sensor/include -I/home/minhnhat/esp/esp-idf/components/driver/twai/include -I/home/minhnhat/esp/esp-idf/components/driver/uart/include -I/home/minhnhat/esp/esp-idf/components/driver/usb_serial_jtag/include -I/home/minhnhat/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/home/minhnhat/esp/esp-idf/components/esp_pm/include -I/home/minhnhat/esp/esp-idf/components/mbedtls/port/include -I/home/minhnhat/esp/esp-idf/components/mbedtls/mbedtls/include -I/home/minhnhat/esp/esp-idf/components/mbedtls/mbedtls/library -I/home/minhnhat/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/minhnhat/esp/esp-idf/components/esp_app_format/include -I/home/minhnhat/esp/esp-idf/components/bootloader_support/include -I/home/minhnhat/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/minhnhat/esp/esp-idf/components/esp_partition/include -I/home/minhnhat/esp/esp-idf/components/app_update/include -I/home/minhnhat/esp/esp-idf/components/esp_mm/include -I/home/minhnhat/esp/esp-idf/components/spi_flash/include -I/home/minhnhat/esp/esp-idf/components/pthread/include -I/home/minhnhat/esp/esp-idf/components/esp_timer/include -I/home/minhnhat/esp/esp-idf/components/app_trace/include -I/home/minhnhat/esp/esp-idf/components/esp_event/include -I/home/minhnhat/esp/esp-idf/components/nvs_flash/include -I/home/minhnhat/esp/esp-idf/components/esp_phy/include -I/home/minhnhat/esp/esp-idf/components/esp_phy/esp32/include -I/home/minhnhat/esp/esp-idf/components/vfs/include -I/home/minhnhat/esp/esp-idf/components/esp_netif/include -I/home/minhnhat/esp/esp-idf/components/wpa_supplicant/include -I/home/minhnhat/esp/esp-idf/components/wpa_supplicant/port/include -I/home/minhnhat/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/minhnhat/esp/esp-idf/components/esp_wifi/include -I/home/minhnhat/esp/esp-idf/components/unity/include -I/home/minhnhat/esp/esp-idf/components/unity/unity/src -I/home/minhnhat/esp/esp-idf/components/cmock/CMock/src -I/home/minhnhat/esp/esp-idf/components/console -I/home/minhnhat/esp/esp-idf/components/http_parser -I/home/minhnhat/esp/esp-idf/components/esp-tls -I/home/minhnhat/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/home/minhnhat/esp/esp-idf/components/esp32-camera/driver/include -I/home/minhnhat/esp/esp-idf/components/esp32-camera/conversions/include -I/home/minhnhat/esp/esp-idf/components/esp_adc/include -I/home/minhnhat/esp/esp-idf/components/esp_adc/interface -I/home/minhnhat/esp/esp-idf/components/esp_adc/esp32/include -I/home/minhnhat/esp/esp-idf/components/esp_adc/deprecated/include -I/home/minhnhat/esp/esp-idf/components/esp_eth/include -I/home/minhnhat/esp/esp-idf/components/esp_gdbstub/include -I/home/minhnhat/esp/esp-idf/components/esp_gdbstub/xtensa -I/home/minhnhat/esp/esp-idf/components/esp_gdbstub/esp32 -I/home/minhnhat/esp/esp-idf/components/esp_hid/include -I/home/minhnhat/esp/esp-idf/components/tcp_transport/include -I/home/minhnhat/esp/esp-idf/components/esp_http_client/include -I/home/minhnhat/esp/esp-idf/components/esp_http_server/include -I/home/minhnhat/esp/esp-idf/components/esp_https_ota/include -I/home/minhnhat/esp/esp-idf/components/esp_lcd/include -I/home/minhnhat/esp/esp-idf/components/esp_lcd/interface -I/home/minhnhat/esp/esp-idf/components/protobuf-c/protobuf-c -I/home/minhnhat/esp/esp-idf/components/protocomm/include/common -I/home/minhnhat/esp/esp-idf/components/protocomm/include/security -I/home/minhnhat/esp/esp-idf/components/protocomm/include/transports -I/home/minhnhat/esp/esp-idf/components/esp_local_ctrl/include -I/home/minhnhat/esp/esp-idf/components/esp_psram/include -I/home/minhnhat/esp/esp-idf/components/espcoredump/include -I/home/minhnhat/esp/esp-idf/components/espcoredump/include/port/xtensa -I/home/minhnhat/esp/esp-idf/components/wear_levelling/include -I/home/minhnhat/esp/esp-idf/components/sdmmc/include -I/home/minhnhat/esp/esp-idf/components/fatfs/diskio -I/home/minhnhat/esp/esp-idf/components/fatfs/vfs -I/home/minhnhat/esp/esp-idf/components/fatfs/src -I/home/minhnhat/esp/esp-idf/components/idf_test/include -I/home/minhnhat/esp/esp-idf/components/idf_test/include/esp32 -I/home/minhnhat/esp/esp-idf/components/ieee802154/include -I/home/minhnhat/esp/esp-idf/components/json/cJSON -I/home/minhnhat/esp/esp-idf/components/mqtt/esp-mqtt/include -I/home/minhnhat/esp/esp-idf/components/perfmon/include -I/home/minhnhat/esp/esp-idf/components/spiffs/include -I/home/minhnhat/esp/esp-idf/components/ulp/ulp_common/include -I/home/minhnhat/esp/esp-idf/components/ulp/ulp_common/include/esp32 -I/home/minhnhat/esp/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address    -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/minhnhat/esp/workspace/esp32-tutorial/15_FreeRTOS=. -fmacro-prefix-map=/home/minhnhat/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj   -c ../main/main.c
+In file included from ../main/main.c:51:
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:40:6: error: #error "include FreeRTOS.h must appear in source files before include task.h"
+   40 |     #error "include FreeRTOS.h must appear in source files before include task.h"
+      |      ^~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:43,
+                 from ../main/main.c:51:
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:67:6: error: #error "FreeRTOS.h must be included before list.h"
+   67 |     #error "FreeRTOS.h must be included before list.h"
+      |      ^~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:43,
+                 from ../main/main.c:51:
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:152:25: error: unknown type name 'TickType_t'
+  152 |     configLIST_VOLATILE TickType_t xItemValue;              /*< The value being listed.  In most cases this is used to sort the list in descending order. */
+      |                         ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:164:25: error: unknown type name 'TickType_t'
+  164 |     configLIST_VOLATILE TickType_t xItemValue;
+      |                         ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:176:14: error: unknown type name 'UBaseType_t'
+  176 |     volatile UBaseType_t uxNumberOfItems;
+      |              ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h: In function 'vListInitialise':
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:354:47: error: expected declaration specifiers before 'PRIVILEGED_FUNCTION'
+  354 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:365:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  365 | void vListInitialiseItem( ListItem_t * const pxItem ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:379:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  379 |                   ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:401:57: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  401 |                      ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:416:1: error: unknown type name 'UBaseType_t'
+  416 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:416:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  416 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      |                                                               ^~~~~~~~~~~~~~~~~~~
+In file included from ../main/main.c:51:
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:89:1: warning: empty declaration
+   89 | struct tskTaskControlBlock;     /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+      | ^~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:90:38: error: storage class specified for parameter 'TaskHandle_t'
+   90 | typedef struct tskTaskControlBlock * TaskHandle_t;
+      |                                      ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:96:21: error: expected declaration specifiers or '...' before '*' token
+   96 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |                     ^
+In file included from ../main/main.c:51:
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:107:3: error: storage class specified for parameter 'eTaskState'
+  107 | } eTaskState;
+      |   ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:117:3: error: storage class specified for parameter 'eNotifyAction'
+  117 | } eNotifyAction;
+      |   ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:126:5: error: unknown type name 'BaseType_t'
+  126 |     BaseType_t xOverflowCount;
+      |     ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:127:5: error: unknown type name 'TickType_t'
+  127 |     TickType_t xTimeOnEntering;
+      |     ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:128:3: error: storage class specified for parameter 'TimeOut_t'
+  128 | } TimeOut_t;
+      |   ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:138:3: error: storage class specified for parameter 'MemoryRegion_t'
+  138 | } MemoryRegion_t;
+      |   ^~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:145:5: error: unknown type name 'TaskFunction_t'
+  145 |     TaskFunction_t pvTaskCode;
+      |     ^~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:147:5: error: unknown type name 'configSTACK_DEPTH_TYPE'
+  147 |     configSTACK_DEPTH_TYPE usStackDepth;
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:149:5: error: unknown type name 'UBaseType_t'
+  149 |     UBaseType_t uxPriority;
+      |     ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:150:5: error: unknown type name 'StackType_t'
+  150 |     StackType_t * puxStackBuffer;
+      |     ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:151:5: error: expected specifier-qualifier-list before 'MemoryRegion_t'
+  151 |     MemoryRegion_t xRegions[ portNUM_CONFIGURABLE_REGIONS ];
+      |     ^~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:155:3: error: storage class specified for parameter 'TaskParameters_t'
+  155 | } TaskParameters_t;
+      |   ^~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:161:5: error: expected specifier-qualifier-list before 'TaskHandle_t'
+  161 |     TaskHandle_t xHandle;                            /* The handle of the task to which the rest of the information in the structure relates. */
+      |     ^~~~~~~~~~~~
+In file included from ../main/main.c:51:
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:173:3: error: storage class specified for parameter 'TaskStatus_t'
+  173 | } TaskStatus_t;
+      |   ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:185:3: error: storage class specified for parameter 'eSleepModeStatus'
+  185 | } eSleepModeStatus;
+      |   ^~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:951:31: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  951 | void vTaskAllocateMPURegions( TaskHandle_t xTask,
+      |                               ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:952:37: error: type defaults to 'int' in declaration of 'MemoryRegion_t' [-Werror=implicit-int]
+  952 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:952:52: error: expected ';', ',' or ')' before '*' token
+  952 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                                    ^
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:999:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  999 | void vTaskDelete( TaskHandle_t xTaskToDelete ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:24: error: unknown type name 'TickType_t'
+ 1058 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1058 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1129:1: error: unknown type name 'BaseType_t'
+ 1129 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1129:29: error: unknown type name 'TickType_t'
+ 1129 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      |                             ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1130:35: error: unknown type name 'TickType_t'
+ 1130 |                             const TickType_t xTimeIncrement ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1176:1: error: unknown type name 'BaseType_t'
+ 1176 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1176:29: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1176 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                             ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1229:1: error: unknown type name 'UBaseType_t'
+ 1229 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1229:38: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Werror=implicit-int]
+ 1229 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1229:51: error: expected ';', ',' or ')' before 'xTask'
+ 1229 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1241:1: error: unknown type name 'UBaseType_t'
+ 1241 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1241:45: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Werror=implicit-int]
+ 1241 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1241:58: error: expected ';', ',' or ')' before 'xTask'
+ 1241 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                          ^~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1263:1: error: expected declaration specifiers before 'eTaskState'
+ 1263 | eTaskState eTaskGetState( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1325:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1325 | void vTaskGetInfo( TaskHandle_t xTask,
+      |                    ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1326:20: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 1326 |                    TaskStatus_t * pxTaskStatus,
+      |                    ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1327:20: error: unknown type name 'BaseType_t'
+ 1327 |                    BaseType_t xGetFreeStackSpace,
+      |                    ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1328:20: error: expected declaration specifiers or '...' before 'eTaskState'
+ 1328 |                    eTaskState eState ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1376:24: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1376 | void vTaskPrioritySet( TaskHandle_t xTask,
+      |                        ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1377:24: error: unknown type name 'UBaseType_t'
+ 1377 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1434:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1434 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1489:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1489 | void vTaskResume( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1524:1: error: unknown type name 'BaseType_t'
+ 1524 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1524:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1524 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1568:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1568 | void vTaskStartScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1630:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1630 | void vTaskEndScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1689:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1689 | void vTaskSuspendAll( void ) PRIVILEGED_FUNCTION;
+      |                              ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1749:1: error: unknown type name 'BaseType_t'
+ 1749 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1749:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1749 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1770:1: error: unknown type name 'TickType_t'
+ 1770 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1770:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1770 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1792:1: error: unknown type name 'TickType_t'
+ 1792 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1792:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1792 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1812:1: error: unknown type name 'UBaseType_t'
+ 1812 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1812:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1812 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1831:23: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1831 | char * pcTaskGetName( TaskHandle_t xTaskToQuery ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                       ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1853:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 1853 | TaskHandle_t xTaskGetHandle( const char * pcNameToQuery ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      | ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1886:1: error: unknown type name 'UBaseType_t'
+ 1886 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1886:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1886 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1919:1: error: unknown type name 'configSTACK_DEPTH_TYPE'
+ 1919 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1919:54: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1919 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1934:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1934 | uint8_t * pxTaskGetStackStart( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2136:1: error: unknown type name 'BaseType_t'
+ 2136 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2136:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2136 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2146:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 2146 | TaskHandle_t xTaskGetIdleTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2245:1: error: unknown type name 'UBaseType_t'
+ 2245 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      | ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2245:35: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 2245 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      |                                   ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2246:41: error: unknown type name 'UBaseType_t'
+ 2246 |                                   const UBaseType_t uxArraySize,
+      |                                         ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2302:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2302 | void vTaskList( char * pcWriteBuffer ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                        ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2364:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2364 | void vTaskGetRunTimeStats( char * pcWriteBuffer ) PRIVILEGED_FUNCTION;     /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2400:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2400 | uint32_t ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2515:1: error: unknown type name 'BaseType_t'
+ 2515 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2515:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2515 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      |                                ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2516:32: error: unknown type name 'UBaseType_t'
+ 2516 |                                UBaseType_t uxIndexToNotify,
+      |                                ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2518:32: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 2518 |                                eNotifyAction eAction,
+      |                                ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2679:1: error: unknown type name 'BaseType_t'
+ 2679 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2679:39: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2679 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      |                                       ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2680:39: error: unknown type name 'UBaseType_t'
+ 2680 |                                       UBaseType_t uxIndexToNotify,
+      |                                       ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2682:39: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 2682 |                                       eNotifyAction eAction,
+      |                                       ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2684:39: error: unknown type name 'BaseType_t'
+ 2684 |                                       BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2832:1: error: unknown type name 'BaseType_t'
+ 2832 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2832:36: error: unknown type name 'UBaseType_t'
+ 2832 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      |                                    ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2836:36: error: unknown type name 'TickType_t'
+ 2836 |                                    TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3006:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3006 | void vTaskGenericNotifyGiveFromISR( TaskHandle_t xTaskToNotify,
+      |                                     ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3007:37: error: unknown type name 'UBaseType_t'
+ 3007 |                                     UBaseType_t uxIndexToNotify,
+      |                                     ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3008:37: error: unknown type name 'BaseType_t'
+ 3008 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3116:35: error: unknown type name 'UBaseType_t'
+ 3116 | uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+      |                                   ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3117:35: error: unknown type name 'BaseType_t'
+ 3117 |                                   BaseType_t xClearCountOnExit,
+      |                                   ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3118:35: error: unknown type name 'TickType_t'
+ 3118 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3185:1: error: unknown type name 'BaseType_t'
+ 3185 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3185:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3185 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3186:42: error: unknown type name 'UBaseType_t'
+ 3186 |                                          UBaseType_t uxIndexToClear ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3254:41: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3254 | uint32_t ulTaskGenericNotifyValueClear( TaskHandle_t xTask,
+      |                                         ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3255:41: error: unknown type name 'UBaseType_t'
+ 3255 |                                         UBaseType_t uxIndexToClear,
+      |                                         ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3280:28: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 3280 | void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                            ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3369:1: error: unknown type name 'BaseType_t'
+ 3369 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3369:34: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 3369 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      |                                  ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3370:34: error: unknown type name 'TickType_t'
+ 3370 |                                  TickType_t * const pxTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3402:1: error: unknown type name 'BaseType_t'
+ 3402 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3402:31: error: unknown type name 'TickType_t'
+ 3402 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3442:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 3442 | TaskHandle_t xTaskGetCurrentTaskHandleForCPU( BaseType_t cpuid );
+      | ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3455:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 3455 | TaskHandle_t xTaskGetIdleTaskHandleForCPU( UBaseType_t cpuid );
+      | ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3460:1: error: unknown type name 'BaseType_t'
+ 3460 | BaseType_t xTaskGetAffinity( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3460:30: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3460 | BaseType_t xTaskGetAffinity( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                              ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3480:1: error: unknown type name 'BaseType_t'
+ 3480 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3480:39: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3480 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3528:35: error: unknown type name 'TickType_t'
+ 3528 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3528:61: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3528 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                             ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3530:44: error: unknown type name 'TickType_t'
+ 3530 |                                      const TickType_t xItemValue,
+      |                                            ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3531:44: error: unknown type name 'TickType_t'
+ 3531 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3531:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3531 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3545:39: error: unknown type name 'TickType_t'
+ 3545 |                                       TickType_t xTicksToWait,
+      |                                       ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3546:45: error: unknown type name 'BaseType_t'
+ 3546 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3592:1: error: unknown type name 'BaseType_t'
+ 3592 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3592:73: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3592 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      |                                                                         ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3594:47: error: unknown type name 'TickType_t'
+ 3594 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3594:71: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3594 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3604:1: error: expected declaration specifiers before 'portDONT_DISCARD'
+ 3604 | portDONT_DISCARD void vTaskSwitchContext( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3610:1: error: unknown type name 'TickType_t'
+ 3610 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3610:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3610 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3615:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 3615 | TaskHandle_t xTaskGetCurrentTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3621:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3621 | void vTaskMissedYield( void ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3627:1: error: unknown type name 'BaseType_t'
+ 3627 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3627:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3627 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3633:1: error: unknown type name 'BaseType_t'
+ 3633 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3633:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3633 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3639:1: error: unknown type name 'BaseType_t'
+ 3639 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3639:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3639 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3649:43: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3649 | void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder,
+      |                                           ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3650:43: error: unknown type name 'UBaseType_t'
+ 3650 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3655:1: error: unknown type name 'UBaseType_t'
+ 3655 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3655:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3655 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3661:26: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 3661 | void vTaskSetTaskNumber( TaskHandle_t xTask,
+      |                          ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3662:32: error: unknown type name 'UBaseType_t'
+ 3662 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3672:27: error: unknown type name 'TickType_t'
+ 3672 | void vTaskStepTick( const TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                           ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3672:53: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 3672 | void vTaskStepTick( const TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                                                     ^~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3688:1: error: expected declaration specifiers before 'eSleepModeStatus'
+ 3688 | eSleepModeStatus eTaskConfirmSleepModeStatus( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3694:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 3694 | TaskHandle_t pvTaskIncrementMutexHeldCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:3700:36: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 3700 | void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:11,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/esp_common/include/esp_err.h:19:13: error: storage class specified for parameter 'esp_err_t'
+   19 | typedef int esp_err_t;
+      |             ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_common/include/esp_err.h:58:29: error: expected declaration specifiers or '...' before 'esp_err_t'
+   58 | const char *esp_err_to_name(esp_err_t code);
+      |                             ^~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:11,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/esp_common/include/esp_err.h:76:31: error: expected declaration specifiers or '...' before 'esp_err_t'
+   76 | const char *esp_err_to_name_r(esp_err_t code, char *buf, size_t buflen);
+      |                               ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_common/include/esp_err.h:79:30: error: expected declaration specifiers or '...' before 'esp_err_t'
+   79 | void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const char *function, const char *expression) __attribute__((noreturn));
+      |                              ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_common/include/esp_err.h:82:44: error: expected declaration specifiers or '...' before 'esp_err_t'
+   82 | void _esp_error_check_failed_without_abort(esp_err_t rc, const char *file, int line, const char *function, const char *expression);
+      |                                            ^~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:12,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:82:16: error: storage class specified for parameter 'intr_handler_t'
+   82 | typedef void (*intr_handler_t)(void *arg);
+      |                ^~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:85:35: error: storage class specified for parameter 'intr_handle_data_t'
+   85 | typedef struct intr_handle_data_t intr_handle_data_t;
+      |                                   ^~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:88:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+   88 | typedef intr_handle_data_t *intr_handle_t ;
+      |                            ^
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:105:1: error: expected declaration specifiers before 'esp_err_t'
+  105 | esp_err_t esp_intr_mark_shared(int intno, int cpu, bool is_in_iram);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:119:1: error: expected declaration specifiers before 'esp_err_t'
+  119 | esp_err_t esp_intr_reserve(int intno, int cpu);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:154:1: error: expected declaration specifiers before 'esp_err_t'
+  154 | esp_err_t esp_intr_alloc(int source, int flags, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:192:1: error: expected declaration specifiers before 'esp_err_t'
+  192 | esp_err_t esp_intr_alloc_intrstatus(int source, int flags, uint32_t intrstatusreg, uint32_t intrstatusmask, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:213:1: error: expected declaration specifiers before 'esp_err_t'
+  213 | esp_err_t esp_intr_free(intr_handle_t handle);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:223:22: error: unknown type name 'intr_handle_t'
+  223 | int esp_intr_get_cpu(intr_handle_t handle);
+      |                      ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:232:24: error: unknown type name 'intr_handle_t'
+  232 | int esp_intr_get_intno(intr_handle_t handle);
+      |                        ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:250:1: error: expected declaration specifiers before 'esp_err_t'
+  250 | esp_err_t esp_intr_disable(intr_handle_t handle);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:263:1: error: expected declaration specifiers before 'esp_err_t'
+  263 | esp_err_t esp_intr_enable(intr_handle_t handle);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:277:1: error: expected declaration specifiers before 'esp_err_t'
+  277 | esp_err_t esp_intr_set_in_iram(intr_handle_t handle, bool is_in_iram);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:306:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  306 | {
+      | ^
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:14,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:20:3: error: storage class specified for parameter 'gpio_port_t'
+   20 | } gpio_port_t;
+      |   ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:116:3: error: storage class specified for parameter 'gpio_num_t'
+  116 | } gpio_num_t;
+      |   ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:432:3: error: storage class specified for parameter 'gpio_int_type_t'
+  432 | } gpio_int_type_t;
+      |   ^~~~~~~~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:14,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:448:3: error: storage class specified for parameter 'gpio_mode_t'
+  448 | } gpio_mode_t;
+      |   ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:453:3: error: storage class specified for parameter 'gpio_pullup_t'
+  453 | } gpio_pullup_t;
+      |   ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:458:3: error: storage class specified for parameter 'gpio_pulldown_t'
+  458 | } gpio_pulldown_t;
+      |   ^~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:465:3: error: storage class specified for parameter 'gpio_pull_mode_t'
+  465 | } gpio_pull_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/hal/include/hal/gpio_types.h:474:3: error: storage class specified for parameter 'gpio_drive_cap_t'
+  474 | } gpio_drive_cap_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:10,
+                 from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:16,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:19:35: error: storage class specified for parameter 'esp_etm_channel_handle_t'
+   19 | typedef struct esp_etm_channel_t *esp_etm_channel_handle_t;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:24:33: error: storage class specified for parameter 'esp_etm_event_handle_t'
+   24 | typedef struct esp_etm_event_t *esp_etm_event_handle_t;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:29:32: error: storage class specified for parameter 'esp_etm_task_handle_t'
+   29 | typedef struct esp_etm_task_t *esp_etm_task_handle_t;
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:36:3: error: storage class specified for parameter 'esp_etm_channel_config_t'
+   36 | } esp_etm_channel_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:52:1: error: expected declaration specifiers before 'esp_err_t'
+   52 | esp_err_t esp_etm_new_channel(const esp_etm_channel_config_t *config, esp_etm_channel_handle_t *ret_chan);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:63:1: error: expected declaration specifiers before 'esp_err_t'
+   63 | esp_err_t esp_etm_del_channel(esp_etm_channel_handle_t chan);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:77:1: error: expected declaration specifiers before 'esp_err_t'
+   77 | esp_err_t esp_etm_channel_enable(esp_etm_channel_handle_t chan);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:91:1: error: expected declaration specifiers before 'esp_err_t'
+   91 | esp_err_t esp_etm_channel_disable(esp_etm_channel_handle_t chan);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:106:1: error: expected declaration specifiers before 'esp_err_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      | ^~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:10,
+                 from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:16,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:119:1: error: expected declaration specifiers before 'esp_err_t'
+  119 | esp_err_t esp_etm_del_event(esp_etm_event_handle_t event);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:132:1: error: expected declaration specifiers before 'esp_err_t'
+  132 | esp_err_t esp_etm_del_task(esp_etm_task_handle_t task);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:143:1: error: expected declaration specifiers before 'esp_err_t'
+  143 | esp_err_t esp_etm_dump(FILE *out_stream);
+      | ^~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:16,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:23:3: error: storage class specified for parameter 'gpio_etm_event_edge_t'
+   23 | } gpio_etm_event_edge_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:29:5: error: expected specifier-qualifier-list before 'gpio_etm_event_edge_t'
+   29 |     gpio_etm_event_edge_t edge; /*!< Which kind of edge can trigger the ETM event module */
+      |     ^~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:30:3: error: storage class specified for parameter 'gpio_etm_event_config_t'
+   30 | } gpio_etm_event_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:16,
+                 from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:47:1: error: expected declaration specifiers before 'esp_err_t'
+   47 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:62:1: error: expected declaration specifiers before 'esp_err_t'
+   62 | esp_err_t gpio_etm_event_bind_gpio(esp_etm_event_handle_t event, int gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:71:3: error: storage class specified for parameter 'gpio_etm_task_action_t'
+   71 | } gpio_etm_task_action_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:77:5: error: expected specifier-qualifier-list before 'gpio_etm_task_action_t'
+   77 |     gpio_etm_task_action_t action; /*!< Which action to take by the ETM task module */
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:78:3: error: storage class specified for parameter 'gpio_etm_task_config_t'
+   78 | } gpio_etm_task_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:96:1: error: expected declaration specifiers before 'esp_err_t'
+   96 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:112:1: error: expected declaration specifiers before 'esp_err_t'
+  112 | esp_err_t gpio_etm_task_add_gpio(esp_etm_task_handle_t task, int gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:128:1: error: expected declaration specifiers before 'esp_err_t'
+  128 | esp_err_t gpio_etm_task_rm_gpio(esp_etm_task_handle_t task, int gpio_num);
+      | ^~~~~~~~~
+In file included from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:33:9: error: unknown type name 'intr_handle_t'
+   33 | typedef intr_handle_t gpio_isr_handle_t;
+      |         ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:33:23: error: storage class specified for parameter 'gpio_isr_handle_t'
+   33 | typedef intr_handle_t gpio_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:40:16: error: storage class specified for parameter 'gpio_isr_t'
+   40 | typedef void (*gpio_isr_t)(void *arg);
+      |                ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:47:5: error: expected specifier-qualifier-list before 'gpio_mode_t'
+   47 |     gpio_mode_t mode;               /*!< GPIO mode: set input/output mode                     */
+      |     ^~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:51:3: error: storage class specified for parameter 'gpio_config_t'
+   51 | } gpio_config_t;
+      |   ^~~~~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:65:1: error: expected declaration specifiers before 'esp_err_t'
+   65 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:78:1: error: expected declaration specifiers before 'esp_err_t'
+   78 | esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:91:1: error: expected declaration specifiers before 'esp_err_t'
+   91 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      | ^~~~~~~~~
+In file included from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:108:1: error: expected declaration specifiers before 'esp_err_t'
+  108 | esp_err_t gpio_intr_enable(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:122:1: error: expected declaration specifiers before 'esp_err_t'
+  122 | esp_err_t gpio_intr_disable(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:137:1: error: expected declaration specifiers before 'esp_err_t'
+  137 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:151:20: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  151 | int gpio_get_level(gpio_num_t gpio_num);
+      |                    ^~~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:166:1: error: expected declaration specifiers before 'esp_err_t'
+  166 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:181:1: error: expected declaration specifiers before 'esp_err_t'
+  181 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:194:1: error: expected declaration specifiers before 'esp_err_t'
+  194 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:205:1: error: expected declaration specifiers before 'esp_err_t'
+  205 | esp_err_t gpio_wakeup_disable(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:231:1: error: expected declaration specifiers before 'esp_err_t'
+  231 | esp_err_t gpio_isr_register(void (*fn)(void *), void *arg, int intr_alloc_flags, gpio_isr_handle_t *handle);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:242:1: error: expected declaration specifiers before 'esp_err_t'
+  242 | esp_err_t gpio_pullup_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:253:1: error: expected declaration specifiers before 'esp_err_t'
+  253 | esp_err_t gpio_pullup_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:264:1: error: expected declaration specifiers before 'esp_err_t'
+  264 | esp_err_t gpio_pulldown_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:275:1: error: expected declaration specifiers before 'esp_err_t'
+  275 | esp_err_t gpio_pulldown_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+In file included from ../main/main.c:52:
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:292:1: error: expected declaration specifiers before 'esp_err_t'
+  292 | esp_err_t gpio_install_isr_service(int intr_alloc_flags);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:323:1: error: expected declaration specifiers before 'esp_err_t'
+  323 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:335:1: error: expected declaration specifiers before 'esp_err_t'
+  335 | esp_err_t gpio_isr_handler_remove(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:347:1: error: expected declaration specifiers before 'esp_err_t'
+  347 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:359:1: error: expected declaration specifiers before 'esp_err_t'
+  359 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:387:1: error: expected declaration specifiers before 'esp_err_t'
+  387 | esp_err_t gpio_hold_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:406:1: error: expected declaration specifiers before 'esp_err_t'
+  406 | esp_err_t gpio_hold_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:472:1: error: expected declaration specifiers before 'esp_err_t'
+  472 | esp_err_t gpio_sleep_sel_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:481:1: error: expected declaration specifiers before 'esp_err_t'
+  481 | esp_err_t gpio_sleep_sel_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:495:1: error: expected declaration specifiers before 'esp_err_t'
+  495 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      | ^~~~~~~~~
+/home/minhnhat/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:509:1: error: expected declaration specifiers before 'esp_err_t'
+  509 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      | ^~~~~~~~~
+../main/main.c:53:26: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   53 | void vTask1(void *params){
+      |                          ^
+../main/main.c:59:26: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   59 | void vTask2(void *params){
+      |                          ^
+../main/main.c:65:26: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   65 | void vTask3(void *params){
+      |                          ^
+../main/main.c:71:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   71 | void app_main(void){
+      |                    ^
+In file included from /home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:43,
+                 from ../main/main.c:51:
+/home/minhnhat/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:354:6: error: old-style parameter declarations in prototyped function definition
+  354 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |      ^~~~~~~~~~~~~~~
+../main/main.c:78: error: expected '{' at end of input
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

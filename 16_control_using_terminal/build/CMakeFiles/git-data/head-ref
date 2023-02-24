@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 1602823f4d3a88d9247226d206c813ce6d6e3da8 nhatVNU <tranminhnhat20022002@gmail.com> 1676206277 +0700	clone: from git@github.com:nhatVNU/esp32-idf-course.git
+1602823f4d3a88d9247226d206c813ce6d6e3da8 4ba18f459debfff9e65138e1be67eff78737aba8 nhatVNU <tranminhnhat20022002@gmail.com> 1676206463 +0700	commit: Add README
+4ba18f459debfff9e65138e1be67eff78737aba8 bd9bc933310a9d47139bd066f503389a56ade796 nhatVNU <tranminhnhat20022002@gmail.com> 1676210750 +0700	commit: add delay
+bd9bc933310a9d47139bd066f503389a56ade796 74e41310bc29b480e5b22fdaa5ccf9c9f6ba7def nhatVNU <tranminhnhat20022002@gmail.com> 1676211451 +0700	commit: a
+74e41310bc29b480e5b22fdaa5ccf9c9f6ba7def 82acc00385cfbaddfdff5e6b2c70498d26b9e0e1 nhatVNU <tranminhnhat20022002@gmail.com> 1676212357 +0700	commit: add random_gen_dice
+82acc00385cfbaddfdff5e6b2c70498d26b9e0e1 09f6e045fe52a347e05b766a3e7f62e47523034d nhatVNU <tranminhnhat20022002@gmail.com> 1676297317 +0700	commit: Add 5 and 6 content
+09f6e045fe52a347e05b766a3e7f62e47523034d d4114d9271fe511a3020463f09839d628f38a734 nhatVNU <tranminhnhat20022002@gmail.com> 1676737301 +0700	commit: add function pointer and structure
+d4114d9271fe511a3020463f09839d628f38a734 1b43a55421eadad93a46fa49f2f39afca88c9151 nhatVNU <tranminhnhat20022002@gmail.com> 1676772057 +0700	commit: add project named pointer to function
+1b43a55421eadad93a46fa49f2f39afca88c9151 09540d0f805239f3f0e1222665003a15a9fc2927 nhatVNU <tranminhnhat20022002@gmail.com> 1677198221 +0700	commit: update
