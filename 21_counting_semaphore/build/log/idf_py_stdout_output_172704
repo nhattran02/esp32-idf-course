@@ -1,0 +1,57 @@
+[1/13] Linking C static library esp-idf/spiffs/libspiffs.a
+[2/13] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[3/13] Performing build step for 'bootloader'
+[1/1] cd /home/minhnhat/esp/workspace/esp32-tutorial/21_counting_semaphore/build/bootloader/esp-idf/esptool_py && /home/minhnhat/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/minhnhat/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/minhnhat/esp/workspace/esp32-tutorial/21_counting_semaphore/build/bootloader/bootloader.bin
+Bootloader binary size 0x6730 bytes. 0x8d0 bytes (8%) free.
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/11] Linking C static library esp-idf/main/libmain.a
+[6/11] Generating ld/sections.ld
+[7/11] Building C object CMakeFiles/esp32_starter_template.elf.dir/project_elf_src_esp32.c.obj
+[8/11] Linking CXX executable esp32_starter_template.elf
+[9/11] Generating binary image from built executable
+esptool.py v4.5.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/minhnhat/esp/workspace/esp32-tutorial/21_counting_semaphore/build/esp32_starter_template.bin
+[10/11] cd /home/minhnhat/esp/workspace/esp32-tutorial/21_counting_semaphore/build/esp-idf/esptool_py && /home/minhnhat/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/minhnhat/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/minhnhat/esp/workspace/esp32-tutorial/21_counting_semaphore/build/partition_table/partition-table.bin /home/minhnhat/esp/workspace/esp32-tutorial/21_counting_semaphore/build/esp32_starter_template.bin
+esp32_starter_template.bin binary size 0x2a1f0 bytes. Smallest app partition is 0x100000 bytes. 0xd5e10 bytes (84%) free.
+[10/11] cd /home/minhnhat/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/minhnhat/esp/esp-idf -D "SERIAL_TOOL=/home/minhnhat/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/minhnhat/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/minhnhat/esp/workspace/esp32-tutorial/21_counting_semaphore/build -P /home/minhnhat/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 esp32_starter_template.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.dev2
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ec:62:60:9c:ed:94
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003afff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26416 bytes to 16498...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000769d... (100 %)
+Wrote 26416 bytes (16498 compressed) at 0x00001000 in 0.9 seconds (effective 243.6 kbit/s)...
+Hash of data verified.
+Compressed 172528 bytes to 96176...
+Writing at 0x00010000... (16 %)
+Writing at 0x0001bde9... (33 %)
+Writing at 0x000217d1... (50 %)
+Writing at 0x00026ece... (66 %)
+Writing at 0x0002d114... (83 %)
+Writing at 0x00034ecf... (100 %)
+Wrote 172528 bytes (96176 compressed) at 0x00010000 in 2.7 seconds (effective 503.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 330.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
